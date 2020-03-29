@@ -1,0 +1,14 @@
+Add functionality to find duplicate PO's within certain date range
+
+Other ideas..
+
+Bake in the concession log stuff from other project to be added to each retailer page
+
+Finish "Small order diary"
+
+Rework reports (add boolean field to supplier table) and use qty alloc/qty required
+
+Refreshable expiry report that can work with the rework report/concessions to display that stock will 
+need reworking despite being fully allocated because it's past life for that retailer and not on concession
+
+Similarly a expiry/concessions table for QA to know what/when to move stock

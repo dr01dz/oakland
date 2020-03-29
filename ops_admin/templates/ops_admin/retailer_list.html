@@ -1,0 +1,27 @@
+{% extends 'ops_admin/base.html' %}
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col-s"></div>
+            <div class="col-m"></div>
+            <div class="col-s"></div>
+        </div>
+        <div class="row">
+            <div class="col-s"></div>
+            <div class="col-m">
+                <ul class="list-group-flush">
+                    {% for retailer in object_list %}
+                        <a href="{% url 'ops_app_checklist' retailer.rcode %}"class="list-group-item list-group-item-hover"><i class="fas fa-shopping-basket"></i> {{ retailer.rname }}</a>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="col-s"></div>
+        </div>
+        <div class="row">
+            <div class="col-s"></div>
+            <div class="col-m"></div>
+            <div class="col-s"></div>
+        </div>
+    </div>
+</div>
+{% endblock content %}
